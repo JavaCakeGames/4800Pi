@@ -1,0 +1,12 @@
+build/
+*.o
+*.deb
+.DS_Store
+.idea
+*.prg
+*.PRG
+box16
+box16-icon56-24.png
+icons.png
+prog8compiler-*.jar
+x16emu
