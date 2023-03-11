@@ -4,9 +4,9 @@
 %import textio
 
 ; Based on: https://github.com/NesHacker/NesPi/blob/main/pi-spigot.js
-; With thanks to DesertFish. By James, AKA Java Cake Games.
+; With thanks to DesertFish (Irmen). By James (Java Cake Games).
 ;
-; Written for Prog8 8.11-dev (e5e63cc) but also works on older versions.
+; Written for Prog8 8.11-dev (e5e63cc).
 ;
 ; All multiplication and division use the mul and div routines even when 24-bit
 ; results aren't necessary, as doing so doesn't make the program much slower
