@@ -14,5 +14,5 @@ sed -i "/; program startup initialization/,/; statements/d" pi.asm
 
 64tass --ascii --case-sensitive --long-branch -Wall -Wno-strict-bool -Wno-shadow --no-monitor pi.asm --output 4800PI.PRG
 rm *.vice-mon-list *.prg
-./box16 -randram -scale 1 -nosound -warp 1 -prg PI.PRG # turbo!
+./box16 -randram -scale 1 -nosound -warp 1 -prg 4800PI.PRG # turbo!
 rm *.asm *.asme
