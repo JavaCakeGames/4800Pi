@@ -25,12 +25,7 @@ main {
 
     cx16.VERA_IEN = 0 ; Disable interrupts for a smidgen more CPU time
 
-    ; It would be nice if this was delayed to reduce the gap after displaying
-    ; 3. and the first 1. But I don't think it can be done without increasing
-    ; PRG size.
     txt.clear_screen() ; chrout(147)
-    txt.chrout('3')
-    txt.chrout('.')
 
     uword numberOfDigits
     %asm{{
@@ -62,6 +57,12 @@ main {
       @(cx16.r0) = 2
       @(cx16.r0 + 1) = 0
     }
+
+    ; It would be nice if this was delayed to reduce the gap after displaying
+    ; 3. and the first 1.
+    ; But I don't think it can be done without increasing PRG size.
+    txt.chrout('3')
+    txt.chrout('.')
 
     ubyte nines
     ubyte predigit
