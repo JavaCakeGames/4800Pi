@@ -9,7 +9,7 @@ This repository has only been made with Linux in mind, but nothing special is
 required in order to get a working build on Windows. The `sed` stuff in
 `buildrun.sh` is only for trimming the output size.
 
-For more information, see https://javacakegames.itch.io/4800pi
+For more information, see https://blog.javacakegames.com/4800pi or https://javacakegames.itch.io/4800pi
 
 ## Recommended tools
 
