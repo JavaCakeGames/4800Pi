@@ -83,6 +83,7 @@ main {
         left24[0] = asmAnswer[0]
         left24[1] = asmAnswer[1]
         left24[2] = asmAnswer[2]
+
         mul24(cx16.r2, q)
         right24[0] = asmAnswer[0]
         right24[1] = asmAnswer[1]
