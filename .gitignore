@@ -5,6 +5,8 @@ build/
 .idea
 *.prg
 *.PRG
+*.asm
+*.asme
 box16
 box16-icon56-24.png
 icons.png
