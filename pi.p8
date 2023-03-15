@@ -129,7 +129,7 @@ main {
       when q {
         9 -> nines++
         10 -> {
-          txt.chrout(predigit + 49) ; predigit + 1
+          txt.chrout('1' + predigit)
           if nines != 0 {
             for cx16.r0L in 1 to nines {
               txt.chrout('0')
@@ -139,8 +139,7 @@ main {
           nines = 0
         }
         else -> {
-          ; Numbers start at 48 in ASCII
-          if (cx16.r1 > 2) txt.chrout(predigit + 48)
+          if (cx16.r1 > 2) txt.chrout('0' + predigit)
           predigit = q
           if nines != 0 {
             for cx16.r0L in 1 to nines {
