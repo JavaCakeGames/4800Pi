@@ -61,6 +61,8 @@ main {
     ; It would be nice if this was delayed to reduce the gap after displaying
     ; 3. and the first 1.
     ; But I don't think it can be done without increasing PRG size.
+    ; As of R43, the sequence "3." is now in ROM and RAM, but there's no way to
+    ; take advantage of that to decrease the PRG size. memory_copy is larger.
     txt.chrout('3')
     txt.chrout('.')
 
