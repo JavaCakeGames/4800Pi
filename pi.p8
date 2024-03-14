@@ -47,8 +47,7 @@ main {
       6 -> numberOfDigits = 300 ; 20x15
     }
 
-    uword length = (numberOfDigits << 3) ; * 8
-    length += (numberOfDigits << 1) ; * 2 = * 10
+    uword length = numberOfDigits * 10
 
     asmAnswer[0] = lsb(length)
     asmAnswer[1] = msb(length)
