@@ -11,7 +11,7 @@
 ; Based on: https://github.com/NesHacker/NesPi/blob/main/pi-spigot.js
 ; With thanks to DesertFish (Irmen). By James (Java Cake Games).
 ;
-; Written for Prog8 10.1.
+; Written for Prog8 10.2.
 ;
 ; Arrays have @requirezp to force them into zeropage.
 ; Normal variables are automatically put into zeropage (they all fit).
