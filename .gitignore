@@ -10,6 +10,6 @@ build/
 box16
 box16-icon56-24.png
 icons.png
-prog8compiler-*.jar
+*.jar
 x16emu
 rom.bin
