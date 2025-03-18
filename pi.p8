@@ -18,6 +18,8 @@
 
 main {
 
+  const bool TAU = false
+
   ; div routine writes its answer into this
   ; Also used as input for div
   ubyte[3] @shared @requirezp asmAnswer
@@ -63,7 +65,8 @@ main {
 
     ; Used to be to (length + 1) << 1 but this allows for smaller PRG
     for cx16.r0 in A to 37143 step 2 {
-      @(cx16.r0) = 2
+      if TAU @(cx16.r0) = 4
+      else @(cx16.r0) = 2
       @(cx16.r0 + 1) = 0
     }
 
@@ -72,7 +75,8 @@ main {
     ; But I don't think it can be done without increasing PRG size.
     ; As of R43, the sequence "3." is now in ROM and RAM, but there's no way to
     ; take advantage of that to decrease the PRG size. memory_copy is larger.
-    txt.chrout('3')
+    if TAU txt.chrout('6')
+    else txt.chrout('3')
     txt.chrout('.')
 
     for cx16.r1 in 1 to numberOfDigits {
